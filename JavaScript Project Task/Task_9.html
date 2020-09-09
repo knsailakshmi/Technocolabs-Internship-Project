@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race Day</title>
+  </head>
+  <body>
+    <script>
+      let raceNumber = Math.floor(Math.random() * 1000);
+      let regEarly = true;
+      let runnerAge = 19;
+      // by default I am giving 19 You can change the runnerAge and regEarly and fetch appropriate output on the console.
+
+      if (runnerAge > 18 && regEarly) {
+        raceNumber += 1000;
+        console.log(`Runner:${raceNumber}: Your race starts at 9:30AM`);
+      } else if (runnerAge > 18 && regEarly == false) {
+        console.log(`Runner:${raceNumber}: Your race starts at 11:00AM`);
+      } else if (runnerAge < 18) {
+        console.log(`Runner:${raceNumber}: Your race starts at 12:30PM`);
+      } else {
+        console.log(
+          `Runner:${raceNumber}: Please contact registration desk for race timings`
+        );
+      }
+    </script>
+  </body>
+</html>
