@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelvin Weather</title>
+  </head>
+  <body>
+    <script>
+      const kelvin = 293; //set 293 in kelvin variable
+      const celsius = kelvin - 273; //Celsius is 273 degrees less than Kelvin.
+      let fahrenheit = celsius * (9 / 5) + 32; //calculating the fahrenheit using this formula
+      Fahrenheit = Math.floor(fahrenheit); //round down the Fahrenheit temperature
+      console.log(`The temprature is ${Fahrenheit} degrees fahrenheit`);
+      //Extra
+      //Temperature in Newton scale
+      newton = celsius * (33 / 100);
+      //Rounding the Newton scale
+      Newton = Math.floor(newton);
+      console.log(`The temperature is ${Newton} degrees Newton.`);
+    </script>
+  </body>
+</html>
