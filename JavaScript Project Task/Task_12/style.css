@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 html,
 body {
   margin: 0;
@@ -6,32 +8,22 @@ body {
 
 header {
   background-color: #333333;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
 }
 
 nav {
   margin: 0;
   padding: 20px 0;
 }
-nav ul {
-  display: flex;
-}
 
 nav li {
   color: #fff;
-  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 12px;
-  width: 80px;
 }
 
 main {
   text-align: center;
-  position: relative;
-  top: 80px;
 }
 
 main h1 {
@@ -58,7 +50,7 @@ footer p {
 }
 
 .container {
-  max-width: 602px;
+  max-width: 940px;
   margin: 0 auto;
   padding: 0 10px;
   text-align: center;
@@ -104,9 +96,6 @@ footer p {
 .supporting .col {
   font-family: "Raleway", sans-serif;
   text-align: center;
-  width: 200px;
-  height: 200px;
-  display: table-cell;
 }
 
 .supporting img {
@@ -126,9 +115,7 @@ footer p {
   padding: 0 20px;
   margin-bottom: 20px;
 }
-#head {
-  position: fixed;
-}
+
 .supporting a {
   background-color: white;
   color: #333333;
@@ -151,5 +138,47 @@ footer p {
 
   .supporting .col {
     width: 100%;
+  }
+}
+
+/* CSS Written by me */
+nav ul {
+  list-style-type: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  width: 80px;
+}
+
+main {
+  position: relative;
+  top: 80px;
+}
+
+.supporting .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.supporting .col {
+  margin-top: 30px;
+  flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .supporting .container {
+    display: block;
+  }
+
+  .jumbotron .container {
+    padding-top: 15%;
   }
 }
