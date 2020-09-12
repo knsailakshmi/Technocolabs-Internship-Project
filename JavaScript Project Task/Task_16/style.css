@@ -3,7 +3,7 @@
 body {
   margin: 0px;
   background-color: WhiteSmoke;
-  font-family: "Rock Salt", cursive;
+  font-family: 'Rock Salt', cursive;
   text-align: center;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 .tagline {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: LightSlateGrey;
   line-height: 125px;
 }
@@ -41,25 +41,25 @@ h2 {
 
 .week {
   display: inline-flex;
-  flex-direction: column;
   flex-grow: 3;
+  flex-direction: column;
 }
 
 .row {
   min-height: 200px;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 .square {
   width: 125px;
   height: 125px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 }
 
 .day.square {
@@ -73,7 +73,7 @@ h2 {
 }
 
 .task p {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 12px;
 }
